@@ -6,7 +6,7 @@ gulp.task('css', function() {
          require('postcss-import')(),
         require('postcss-mixins')(),
         require('postcss-for')(),
-        require('postcss-simple-vars')({silent: true}}), 
+        require('postcss-simple-vars')({silent: true}), 
         require('postcss-nested')(),
         require('postcss-extend-rule')(),
         cssnext({

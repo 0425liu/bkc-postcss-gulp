@@ -29,20 +29,19 @@ $column: 200px;
         background: $color;
     }
 }
-
+ 
 @mixin icon twitter {
     background: url(twt.png);
 }
 @mixin icon youtube, red {
     background: url(youtube.png);
 }
-
+ 
 %thick-border {
   border: thick dotted red;
 }
  
 .serious-modal {
-  font-style: normal;
   font-weight: bold;
   @nest &:not(:focus){
   outline: none;

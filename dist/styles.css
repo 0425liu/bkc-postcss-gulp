@@ -30,20 +30,23 @@ a{
         background: red;
     }
 .serious-modal {
-  font-style: normal;
   font-weight: bold;
 }
 .serious-modal:not(:focus){
     outline: none;
 }
-.serious-modal:not(:focus){
-    outline: none;
-}
 @media (max-width: 240px) {
-    .serious-modal:not(:focus){
-        outline: none;
+    @nest &:not(:focus){
+  outline: none;
     }
-}
+@media (max-width: 240px) {
+        @nest &:not(:focus){
+
+  outline: none;
+        }
+  
+  }
+  }
 .modal{
     border: thick dotted red;
     color: red;

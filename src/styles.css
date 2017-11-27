@@ -1,0 +1,68 @@
+@import "../a.css";
+$dir: top;
+$blue: #056ef0;
+$column: 200px;
+.menu_link {
+    background: $blue;
+    width: $column;
+}
+
+.menu {
+    width: calc(4 * $column);
+    margin-$(dir): 110px;
+}
+
+.a {
+    img {
+        display: block;
+        font-size: 122px
+    }
+}
+
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+        @mixin-content;
+    }
+    .icon.is-$(network):hover {
+        color: white;
+        background: $color;
+    }
+}
+
+@mixin icon twitter {
+    background: url(twt.png);
+}
+@mixin icon youtube, red {
+    background: url(youtube.png);
+}
+
+%thick-border {
+  border: thick dotted red;
+}
+ 
+.serious-modal {
+  font-style: normal;
+  font-weight: bold;
+  @nest &:not(:focus){
+  outline: none;
+    }
+  @media (max-width: 240px) {
+    @extend .modal:hover;
+  }
+}
+ 
+.modal {
+  @extend %thick-border;
+ 
+  color: red;
+}
+ 
+.modal:hover:not(:focus) {
+  outline: none;
+  @media (max-width: 240px) {
+
+  outline: none;
+  
+  }
+}

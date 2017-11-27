@@ -1,0 +1,60 @@
+a{
+    color: #fff;
+}
+.menu_link {
+    background: #056ef0;
+    width: 200px;
+}
+.menu {
+    width: 800px;
+    margin-top: 110px;
+}
+.a img {
+        display: block;
+        font-size: 122px
+    }
+.icon.is-twitter {
+        color: blue;
+    background: url(twt.png);
+    }
+.icon.is-twitter:hover {
+        color: white;
+        background: blue;
+    }
+.icon.is-youtube {
+        color: red;
+    background: url(youtube.png);
+    }
+.icon.is-youtube:hover {
+        color: white;
+        background: red;
+    }
+.serious-modal {
+  font-style: normal;
+  font-weight: bold;
+}
+.serious-modal:not(:focus){
+    outline: none;
+}
+.serious-modal:not(:focus){
+    outline: none;
+}
+@media (max-width: 240px) {
+    .serious-modal:not(:focus){
+        outline: none;
+    }
+}
+.modal{
+    border: thick dotted red;
+    color: red;
+}
+.modal:hover:not(:focus) {
+  outline: none;
+}
+@media (max-width: 240px) {
+.modal:hover:not(:focus) {
+
+  outline: none
+}
+  
+  }
